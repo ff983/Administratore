@@ -1,0 +1,457 @@
+@import url(bwfont.css);
+body, button, label, input, select, td, textarea, div, p {
+  font-family: 'Open Sans',sans-serif;
+  font-size: 0.965em; }
+
+body {
+  color: #000;
+  background: #FFF;
+  height: 100%;
+  margin: 0;
+  line-height: 1.4;
+  direction: ltr; }
+
+form, h1, h2, h3, h4, h5, p, figure, nav, button, td, th, tr {
+  margin: 0;
+  padding: 0; }
+
+textarea, input {
+  display: inline-block;
+  outline: none; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+textarea {
+  margin: 0; }
+
+a img, fieldset {
+  border: 0; }
+
+img {
+  vertical-align: middle; }
+
+video {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  object-fit: contain; }
+
+select {
+  padding: 2px; }
+
+a:active, a:hover {
+  outline: 0; }
+
+a[disabled] {
+  pointer-events: none;
+  cursor: default; }
+
+.center, .otherRes {
+  text-align: center; }
+
+.left {
+  text-align: left; }
+
+.right {
+  text-align: right; }
+
+.Rfloat {
+  float: right; }
+
+.Lfloat {
+  float: left; }
+
+.flexBox {
+  display: -webkit-flex;
+  display: flex;
+  display: -ms-flexbox; }
+
+.flexFill {
+  flex: 1;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1; }
+
+.XYcenter {
+  align-items: center;
+  -ms-flex-align: center;
+  justify-content: center; }
+
+.Xcenter {
+  margin: 0 auto; }
+
+.Table {
+  display: table;
+  width: 100%;
+  border-collapse: collapse; }
+
+.TableCell {
+  display: table-cell; }
+
+.TableRow {
+  display: table-row; }
+
+.FixedTable {
+  table-layout: fixed; }
+
+._linebr {
+  word-wrap: break-word;
+  white-space: pre-line; }
+
+.clearfix:after {
+  clear: both;
+  content: "";
+  display: block;
+  font-size: 0;
+  height: 0;
+  line-height: 0;
+  visibility: hidden; }
+
+.ellipse {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden; }
+
+.dnone {
+  display: none !important; }
+
+.dblock {
+  display: block !important; }
+
+.vhide {
+  visibility: hidden; }
+
+.ovh {
+  overflow: hidden; }
+
+._relp {
+  position: relative; }
+
+.cropPhoto i {
+  display: block;
+  background: #f9f9f9;
+  background-repeat: no-repeat;
+  background-position: 50% 25%;
+  background-size: cover; }
+
+._160-100 {
+  width: 160px;
+  height: 100px; }
+
+._80-45 {
+  width: 80px;
+  height: 45px; }
+
+.inpad {
+  padding: 15px; }
+
+[contenteditable=true]:empty:before {
+  content: attr(placeholder);
+  display: block; }
+
+/*IconFont*/
+.ifont {
+  display: inline-block; }
+
+a.ifont {
+  text-decoration: none; }
+
+.ifont:before {
+  font-family: "bwfont";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased; }
+
+.iChecked:before {
+  content: "\e601";
+  color: #2196F3;
+  margin-left: 5px; }
+
+.iFdance:before {
+  content: "\e903"; }
+
+.iFmusic:before {
+  content: "\e907"; }
+
+.iFshow:before {
+  content: "\e904"; }
+
+.iFcinema:before {
+  content: "\e908"; }
+
+.iFletterature:before {
+  content: "\e906"; }
+
+.iFvisualart:before {
+  content: "\e905"; }
+
+.iMsg:before {
+  content: "\e60c"; }
+
+.iNotify:before {
+  content: "\e702"; }
+
+.iCalendar:before {
+  content: "\e953"; }
+
+.iCountdown:before {
+  content: "\e614"; }
+
+.iCup:before {
+  content: "\e99e"; }
+
+.iCanc:before {
+  content: "\e612"; }
+
+.iGeo:before {
+  content: "\e947"; }
+
+.iFb:before {
+  content: "\e619";
+  color: #3b5998; }
+
+.iTwitter:before {
+  content: "\ea92";
+  color: #1dcaff; }
+
+.iGplus:before {
+  content: "\ea89";
+  color: #d34836; }
+
+.iStats:before {
+  content: "\e617"; }
+
+.iStar:before {
+  content: "\e610"; }
+
+.iMsg:before {
+  content: "\e60c"; }
+
+.iNotify:before {
+  content: "\e702"; }
+
+.iHome:before {
+  content: "\e900"; }
+
+.iScrollDown:before {
+  content: "\e909"; }
+
+.iArrowDown:before {
+  content: "\ea40"; }
+
+.iLogout:before {
+  content: "\e9b6"; }
+
+.iTrash:before {
+  content: "\e902"; }
+
+/*Animation*/
+.spinCs {
+  min-width: 30px;
+  min-height: 30px;
+  position: relative;
+  padding: 5px 0; }
+
+.spinCs:before {
+  content: 'Loading...';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-top: -13px;
+  margin-left: -13px; }
+
+.spinCs:not(:required):before {
+  content: '';
+  border-radius: 50%;
+  border: 1px solid #CCC;
+  border-top-color: #00E676;
+  animation: spinCs 1s linear infinite;
+  -webkit-animation: spinCs 1s linear infinite; }
+
+.ScaleIn {
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: ScaleIn;
+  animation-name: ScaleIn; }
+
+@keyframes spinCs {
+  to {
+    transform: rotate(360deg); } }
+@-webkit-keyframes spinCs {
+  to {
+    -webkit-transform: rotate(360deg); } }
+@keyframes ScaleIn {
+  0% {
+    transform: scale(0.3); }
+  100% {
+    transform: scale(1); } }
+@-webkit-keyframes ScaleIn {
+  0% {
+    -webkit-transform: scale(0.3); }
+  100% {
+    -webkit-transform: scale(1); } }
+body {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%; }
+
+a, a:visited, a:active {
+  color: #2196F3;
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: underline; }
+
+#container {
+  width: 1100px;
+  margin: 0 auto;
+  padding-top: 50px; }
+
+.TopMenu {
+  background: #263238;
+  color: #ECEFF1;
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  width: 100%; }
+
+.Add_lang {
+  margin: 30px auto 0;
+  background: #f2f2f2;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid #ebebeb;
+  width: 80%; }
+  .Add_lang table {
+    width: 100%; }
+    .Add_lang table td {
+      font-weight: 600;
+      padding: 5px 0; }
+  .Add_lang .insTxt, .Add_lang .insTxt_note {
+    border-radius: 5px;
+    border: 1px solid #999;
+    margin: 0 0 0 10px;
+    padding: 5px;
+    background: #ebebeb; }
+  .Add_lang .insTxt {
+    min-height: 50px;
+    font-weight: 400;
+    color: #999;
+    width: 90%; }
+    .Add_lang .insTxt:focus {
+      background: #FFF;
+      color: #000; }
+  .Add_lang .lblCode {
+    padding: 0 0 10px 20px;
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #C00; }
+  .Add_lang .insTxt_note {
+    width: 300px; }
+    .Add_lang .insTxt_note:focus {
+      background-color: #FFF; }
+
+.AL-action {
+  margin: 20px 0 0 0;
+  text-align: center; }
+  .AL-action a:last-child {
+    margin: 0 0 0 20px; }
+
+.btn {
+  text-decoration: none !important;
+  padding: 8px 35px;
+  display: inline-block;
+  border-radius: 3px;
+  box-shadow: 0 0 11px rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: .5px; }
+
+a.btn {
+  color: #FFF; }
+  a.btn:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); }
+
+.btn[disabled], .otherRes a[disabled] {
+  background: #f9f9f9 !important;
+  color: #999; }
+
+.btn-green:link, .btn-green:visited, .btn-green:focus {
+  background: #26a69a; }
+.btn-green:hover {
+  background: #009688; }
+
+.btn-grey, .btn-grey:visited, .btn-grey:focus {
+  background: #999; }
+
+.btn-grey:hover {
+  background: #888; }
+
+.SearchLabel {
+  border: 1px solid #CCC;
+  border-radius: 5px;
+  padding: 7px; }
+
+.SearchLabel input {
+  border: none;
+  padding: 8px 0; }
+
+.Read_lang {
+  margin: 30px 0 0 0;
+  padding: 20px 0 0 0; }
+
+.Read_lang article {
+  border-radius: 5px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  overflow: hidden; }
+
+.Read_lang article:not(:first-child) {
+  margin-top: 20px; }
+
+.RL-note {
+  padding: 10px;
+  border-bottom: 1px solid #CCC;
+  background: #E8EAF6;
+  font-size: 0.85em; }
+
+.RL-code {
+  font-weight: 600;
+  margin-right: 10px; }
+
+.RL-txt {
+  color: #999; }
+
+.lang_row {
+  padding: 10px;
+  border-bottom: 1px solid #ddd; }
+
+.lang_row:last-child {
+  border: 0; }
+
+.lr-lang {
+  font-weight: 600; }
+
+.lr-value {
+  margin-left: 20px; }
+
+.otherRes {
+  margin: 30px 0 0 0;
+  font-weight: 600; }
+  .otherRes a {
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: #f2f2f2; }
+
+/*# sourceMappingURL=base.css.map */

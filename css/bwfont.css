@@ -1,0 +1,11 @@
+@font-face {
+ font-family: 'bwfont';
+ font-style: normal;
+ font-weight: normal;
+  src: local('bwfont'), url(https://bwcdn.blob.core.windows.net/font/v3/bwfont.eot);
+  src: local('bwfont'), url(https://bwcdn.blob.core.windows.net/font/v3/bwfont#iefix) format('embedded-opentype'),
+       url(https://bwcdn.blob.core.windows.net/font/v3/bwfont.woff) format('woff'),
+	   url(https://bwcdn.blob.core.windows.net/font/v3/bwfont.woff) format('woff2'),
+       url(https://bwcdn.blob.core.windows.net/font/v3/bwfont.ttf) format('ttf'),
+       url(https://bwcdn.blob.core.windows.net/font/v3/bwfont.svg#bwfont) format('svg');
+}
